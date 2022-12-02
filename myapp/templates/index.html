@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    {% for item in articles %}
+        <h2>{{ item.title }}</h2>
+        <p> {{ item.content }} </p>
+        <img src=" {{ item.img }} " alt="">
+        <hr>
+    {% endfor%}
+</body>
+</html>
